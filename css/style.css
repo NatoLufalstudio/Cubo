@@ -11,6 +11,14 @@ body {
 #wrapper {
   padding-top: 11%; }
 
+  @supports(object-fit: cover){
+    .cube img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
 .viewport {
   -webkit-perspective: 800px;
   -moz-perspective: 800px;
@@ -32,8 +40,8 @@ body {
 .cube {
   position: relative;
   margin: 0 auto;
-  height: 350px;
-  width: 350px;
+  height: 450px;
+  width: 450px;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -49,8 +57,8 @@ body {
   overflow: hidden;
   position: absolute;
   opacity: 1;
-  height: 350px;
-  width: 350px;
+  height: 450px;
+  width: 450px;
   background-image: url("http://jordizle.com/static/img/blank.png");
   -webkit-touch-callout: none;
   -moz-touch-callout: none;
@@ -92,51 +100,51 @@ body {
   cursor: pointer; }
 
 .cube > div:first-child {
-  -webkit-transform: rotateX(90deg) translateZ(175px);
-  -moz-transform: rotateX(90deg) translateZ(175px);
-  -ms-transform: rotateX(90deg) translateZ(175px);
-  -o-transform: rotateX(90deg) translateZ(175px);
-  transform: rotateX(90deg) translateZ(175px);
+  -webkit-transform: rotateX(90deg) translateZ(225px);
+  -moz-transform: rotateX(90deg) translateZ(225px);
+  -ms-transform: rotateX(90deg) translateZ(225px);
+  -o-transform: rotateX(90deg) translateZ(225px);
+  transform: rotateX(90deg) translateZ(225px);
   outline: 1px solid transparent; }
 
 .cube > div:nth-child(2) {
-  -webkit-transform: translateZ(175px);
-  -moz-transform: translateZ(175px);
-  -ms-transform: translateZ(175px);
-  -o-transform: translateZ(175px);
-  transform: translateZ(175px);
+  -webkit-transform: translateZ(225px);
+  -moz-transform: translateZ(225px);
+  -ms-transform: translateZ(225px);
+  -o-transform: translateZ(225px);
+  transform: translateZ(225px);
   outline: 1px solid transparent; }
 
 .cube > div:nth-child(3) {
-  -webkit-transform: rotateY(90deg) translateZ(175px);
-  -moz-transform: rotateY(90deg) translateZ(175px);
-  -ms-transform: rotateY(90deg) translateZ(175px);
-  -o-transform: rotateY(90deg) translateZ(175px);
-  transform: rotateY(90deg) translateZ(175px);
+  -webkit-transform: rotateY(90deg) translateZ(225px);
+  -moz-transform: rotateY(90deg) translateZ(225px);
+  -ms-transform: rotateY(90deg) translateZ(225px);
+  -o-transform: rotateY(90deg) translateZ(225px);
+  transform: rotateY(90deg) translateZ(225px);
   outline: 1px solid transparent; }
 
 .cube > div:nth-child(4) {
-  -webkit-transform: rotateY(180deg) translateZ(175px);
-  -moz-transform: rotateY(180deg) translateZ(175px);
-  -ms-transform: rotateY(180deg) translateZ(175px);
-  -o-transform: rotateY(180deg) translateZ(175px);
-  transform: rotateY(180deg) translateZ(175px);
+  -webkit-transform: rotateY(180deg) translateZ(225px);
+  -moz-transform: rotateY(180deg) translateZ(225px);
+  -ms-transform: rotateY(180deg) translateZ(225px);
+  -o-transform: rotateY(180deg) translateZ(225px);
+  transform: rotateY(180deg) translateZ(225px);
   outline: 1px solid transparent; }
 
 .cube > div:nth-child(5) {
-  -webkit-transform: rotateY(-90deg) translateZ(175px);
-  -moz-transform: rotateY(-90deg) translateZ(175px);
-  -ms-transform: rotateY(-90deg) translateZ(175px);
-  -o-transform: rotateY(-90deg) translateZ(175px);
-  transform: rotateY(-90deg) translateZ(175px);
+  -webkit-transform: rotateY(-90deg) translateZ(225px);
+  -moz-transform: rotateY(-90deg) translateZ(225px);
+  -ms-transform: rotateY(-90deg) translateZ(225px);
+  -o-transform: rotateY(-90deg) translateZ(225px);
+  transform: rotateY(-90deg) translateZ(225px);
   outline: 1px solid transparent; }
 
 .cube > div:nth-child(6) {
-  -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(175px);
-  -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(175px);
-  -ms-transform: rotateX(-90deg) rotate(180deg) translateZ(175px);
-  -o-transform: rotateX(-90deg) rotate(180deg) translateZ(175px);
-  transform: rotateX(-90deg) rotate(180deg) translateZ(175px);
+  -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(225px);
+  -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(225px);
+  -ms-transform: rotateX(-90deg) rotate(180deg) translateZ(225px);
+  -o-transform: rotateX(-90deg) rotate(180deg) translateZ(225px);
+  transform: rotateX(-90deg) rotate(180deg) translateZ(225px);
   outline: 1px solid transparent; }
 
 object {
@@ -153,11 +161,12 @@ object:hover {
     -o-transform: scale(0.6, 0.6);
     transform: scale(0.6, 0.6); } }
 
+  
 .cube > div > div.cube-image1 {
-  background: url(https://lufalstudio.com/wp-content/uploads/2018/04/1.jpg);
+  background: url(http://thesynergyco.com/wp-content/uploads/2018/07/Cubo-450_English-05.png);
   background-size: auto 100%;
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -172,11 +181,12 @@ object:hover {
   -ms-transition: color 600ms;
   -o-transition: color 600ms;
   transition: color 600ms; }
+  
 .cube > div > div.cube-image2 {
-  background: url(https://lufalstudio.com/wp-content/uploads/2018/04/2.jpg);
+  background: url(http://thesynergyco.com/wp-content/uploads/2018/07/Cubo-450_English-04.png);
   background-size: auto 100%;
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -191,11 +201,12 @@ object:hover {
   -ms-transition: color 600ms;
   -o-transition: color 600ms;
   transition: color 600ms; }
+  
 .cube > div > div.cube-image3 {
-  background: url(https://lufalstudio.com/wp-content/uploads/2018/04/3.jpg);
+  background: url(http://thesynergyco.com/wp-content/uploads/2018/07/Cubo-450_English-03.png);
   background-size: auto 100%;
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -210,11 +221,12 @@ object:hover {
   -ms-transition: color 600ms;
   -o-transition: color 600ms;
   transition: color 600ms; }
+  
 .cube > div > div.cube-image4 {
-  background: url(https://lufalstudio.com/wp-content/uploads/2018/04/4.jpg);
+  background: url(http://thesynergyco.com/wp-content/uploads/2018/07/Cubo-450_English-02.png);
   background-size: auto 100%;
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -229,11 +241,12 @@ object:hover {
   -ms-transition: color 600ms;
   -o-transition: color 600ms;
   transition: color 600ms; }
+  
 .cube > div > div.cube-image5 {
-  background: url(https://lufalstudio.com/wp-content/uploads/2018/04/5.jpg);
+  background: url(http://thesynergyco.com/wp-content/uploads/2018/07/Cubo-450_English-01.png);
   background-size: auto 100%;
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -248,11 +261,12 @@ object:hover {
   -ms-transition: color 600ms;
   -o-transition: color 600ms;
   transition: color 600ms; }
+
 .cube > div > div.cube-image6 {
-  background: url(https://lufalstudio.com/wp-content/uploads/2018/04/6.jpg);
+  background: url(http://thesynergyco.com/wp-content/uploads/2018/07/Cubo-450_English-06.png);
   background-size: auto 100%;
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
